@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/supperdoggy/spot-models"
+	models "github.com/supperdoggy/spot-models"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.uber.org/zap"
 )
@@ -304,7 +304,7 @@ func (pg *PlaylistGenerator) createM3UPlaylist(files []models.MusicFile, outputP
 		relPath = strings.ReplaceAll(relPath, "..", "")
 		relPath = strings.TrimPrefix(relPath, "/")
 		if !strings.HasPrefix(relPath, "/music/") {
-			relPath = "/music/" + relPath
+			relPath = "/music/Job-downloaded/" + relPath
 		}
 
 		// Write EXTINF line

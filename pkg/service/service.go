@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/supperdoggy/spot-models"
+	models "github.com/supperdoggy/spot-models"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.uber.org/zap"
 )
